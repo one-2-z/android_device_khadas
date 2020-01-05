@@ -1,0 +1,2 @@
+#gps
+ro.kernel.android.gps=ttyACM0
