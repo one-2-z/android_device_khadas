@@ -119,6 +119,12 @@ PRODUCT_COPY_FILES += \
 # Light HAL
 PRODUCT_PACKAGES += \
     lights.amlogic
+    
+#GPS Test
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0 \
+    android.hardware.gnss@1.0-impl \
+    android.hardware.gnss@1.0-service    
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
