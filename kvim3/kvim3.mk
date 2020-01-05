@@ -254,6 +254,21 @@ WIFI_MODULE := multiwifi
 include hardware/amlogic/wifi/configs/wifi.mk
 
 
+########################################################################
+#
+#                           GPS
+#
+########################################################################
+
+BOARD_HAS_GPS_HARDWARE := true
+ifeq ($(BOARD_HAS_GPS_HARDWARE), true)
+PRODUCT_PACKAGES += \
+	gps.default \
+        android.hardware.gnss@1.0 \
+        android.hardware.gnss@1.0-impl \
+        android.hardware.gnss@1.0-service
+endif
+
 
 #########################################################################
 #
